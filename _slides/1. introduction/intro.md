@@ -10,6 +10,8 @@
 - Testing setup
 - Using webpack with Angular2
  
+ ---
+ 
  #Rules of engagement
  - Tijden
  - Lunches en pauzes
