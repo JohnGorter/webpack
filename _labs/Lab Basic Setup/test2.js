@@ -1,0 +1,1 @@
+module.exports = "this second file is bundled aswell"

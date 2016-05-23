@@ -1,5 +1,6 @@
 #Basic setup
- 
+Defining the least supported setup
+
 ---
 #prerequisites
 - Node.JS
@@ -11,7 +12,7 @@ npm install webpack --save
 ```
 
 ---
-###test webpack
+###Test webpack
 - Create a javascript file, test.js
 - Run webpack command
 ```
@@ -29,4 +30,9 @@ npm install webpack --save
 - and of course there should be a generated bundle.js 
 
 ---
+### Labtime
+Creating the inital setup and test it
+
+###Using external configuration
+
 ###sample webpack.conf.js
