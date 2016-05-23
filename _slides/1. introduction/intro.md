@@ -1,9 +1,8 @@
 #Webpack 
  building js files
  
-----
-
-#Agenda
+---
+###Agenda
 - What is Webpack
 - Basic setup
 - Splitting up the config
