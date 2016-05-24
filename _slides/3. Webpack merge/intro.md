@@ -1,11 +1,12 @@
-#Config Splitting
+# Config Splitting
 More complex scenario's require different setups:
 - Development environments needs debugging info 
 - Test environments run tests afterwards
 - Production environments uglify and minify JavaScript
 
+
 ---
-#prerequisites
+# prerequisites
 - Webpack merge
 
 ``` 
@@ -15,7 +16,24 @@ npm i webpack-merge --save-dev
 Configs are JavaScript files, so we can code in them
 
 ---
-### Define startup config
+# API
+```javascript
+var output = merge(object1, object2, object3, ...);
+ 
+// smarter merging for loaders, see below 
+var output = merge.smart(object1, object2, object3, ...);
+```
+
+---
+#Smart Merging of Loaders
+Webpack-merge tries to be smart about merging loaders when merge.smart 
+is used. Loaders with matching tests will be merged into a single 
+loader value.
+
+More info: https://www.npmjs.com/package/webpack-merge
+
+---
+# Define startup config
 ## webpack.config.js
 ```javascript
 module.exports = require('./config/webpack.dev.js');
