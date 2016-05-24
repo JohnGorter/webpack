@@ -331,7 +331,8 @@ html:-moz-full-screen-ancestor {
   margin: auto;
   overflow: visible;
   z-index: 1;
-  text-align: center;
+  margin-left:20%;
+  text-align: left;
   -webkit-perspective: 600px;
           perspective: 600px;
   -webkit-perspective-origin: 50% 40%;
