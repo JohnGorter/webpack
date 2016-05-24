@@ -20,8 +20,10 @@ bundles.
 - With plugin "loaders" Webpack can preprocess and minify different 
 non-JavaScript files such as TypeScript, SASS, and LESS files.
 
+---
 ### picture overview
-<img src="/1. introduction/what-is-webpack.png" />
+<img src="what-is-webpack.png" />
+
 ---
 ### How does Webpack does it
 Webpack works with a JavaScript configuration file(s)
