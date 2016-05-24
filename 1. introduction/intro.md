@@ -18,11 +18,12 @@
  ---
  
  ### Rules of engagement
- - Training hours
- - Lunches 
- - Phones
- - Evaluation
+- Training hours
+- Lunches 
+- Phones
+- Evaluation
+
  
- Have fun!
+> Have fun!
  
  
