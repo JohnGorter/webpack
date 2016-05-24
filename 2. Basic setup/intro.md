@@ -31,8 +31,29 @@ npm install webpack --save
 
 ---
 ### Labtime
-Creating the inital setup and test it
+Create the inital setup and test it
 
 ###Using external configuration
+Webpack can be configured to start with a setup javascript file
+- add a webpack.config.js (name is required)
+- start webpack 
 
-###sample webpack.conf.js
+The config file is not JSON but a JavaScript file so it can
+contain executable script. Lets look at an example:
+
+###sample webpack.config.js
+```javascript
+module.exports = {
+    entry: "./entry.js",
+    output: {
+        path: __dirname,
+        filename: "bundle.js"
+    },
+    module: {
+        loaders: [
+            { test: /\.css$/, loader: "style!css" }
+        ]
+    }
+};
+```
+

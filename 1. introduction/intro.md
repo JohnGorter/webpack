@@ -7,6 +7,8 @@
 - Basic setup
 - Splitting up the config
 - Testing setup
+- Loaders
+- Plugins
 - Using webpack with Angular2
  
  ---
