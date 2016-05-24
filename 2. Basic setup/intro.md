@@ -1,8 +1,8 @@
-#Basic setup
+# Basic setup
 Defining the least supported setup
 
 ---
-#prerequisites
+### prerequisites
 - Node.JS
 [https://nodejs.org/en/](https://nodejs.org/en/)
 - Webpack
@@ -12,7 +12,7 @@ npm install webpack --save
 ```
 
 ---
-###Test webpack
+### Test webpack
 - Create a javascript file, test.js
 - Run webpack command
 ```

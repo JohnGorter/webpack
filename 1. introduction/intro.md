@@ -1,9 +1,9 @@
-#Webpack 
- building js files
+# Webpack 
+ bundeling js files
  
 ---
-###Agenda
-- What is Webpack
+### Agenda
+- Introduction
 - Basic setup
 - Webpack merge
 - Loaders
@@ -17,10 +17,12 @@
  
  ---
  
- ###Rules of engagement
- - Tijden
- - Lunches en pauzes
- - Telefoons
- - Evaluatie
+ ### Rules of engagement
+ - Training hours
+ - Lunches 
+ - Phones
+ - Evaluation
+ 
+ Have fun!
  
  
