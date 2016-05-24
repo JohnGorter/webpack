@@ -5,6 +5,7 @@
 ###Agenda
 - What is Webpack
 - Basic setup
+- Webpack merge
 - Loaders
 - Plugins
 - Code Splitting

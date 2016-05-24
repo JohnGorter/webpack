@@ -38,6 +38,7 @@ Create the inital setup and test it
 Webpack can be configured to start with a setup javascript file
 - add a webpack.config.js (name is required)
 - start webpack 
+- start webpack --config <config.js>
 
 The config file is not JSON but a JavaScript file so it can
 contain executable script. Lets look at an example:
