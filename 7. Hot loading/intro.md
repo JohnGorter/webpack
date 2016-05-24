@@ -52,7 +52,7 @@ chunks
     - contains code for all updated modules in this chunk 
 (or a flag if a module was removed).
 
-^^^
+footnote:
 In addition to the normal assets, the compiler needs to emit the "Update" 
 to allow updating the previous version to the current version. 
 
