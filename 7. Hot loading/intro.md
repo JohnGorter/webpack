@@ -56,8 +56,7 @@ chunks (2.).
 The update chunks contains code for all updated modules in this chunk 
 (or a flag if a module was removed).
 
-Note:
-test note 
+Note:test note 
 
 Note:The compiler also makes sure that module and chunk ids are consistent 
 between these builds. It uses a "records" json file to store them between 
