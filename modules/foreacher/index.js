@@ -2,10 +2,6 @@
 let fs = require('fs');
 let recursive = require('recursive-readdir');
 
-recursive('some/path', function (err, files) {
-  // Files is an array of filename
-  console.log(files);
-});
 
 module.exports = (config)=>{
     readconfig(config).then(

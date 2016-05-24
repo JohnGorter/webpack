@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server",
+    "start": "lite-server -c bs-config.json",
     "generatelabs": "pdfgenerator ./_labs"
   },
   "repository": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/JohnGorter/webpack/issues"
   },
-  "homepage": "https://github.com/JohnGorter/webpack#readme"
+  "homepage": "https://github.com/JohnGorter/webpack#readme",
+  "dependencies": {
+    "lite-server": "^2.2.0"
+  }
 }
