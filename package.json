@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "help":"node printhelp.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "start": "lite-server -c bs-config.json",
-    "generatelabs": "pdfgenerator ./_labs"
+    "startpresentation": "lite-server -c bs-config.json",
+    "generatelabs": "pdfgenerator ./_labs",
+    "updateslides": "git add .;git commit -am'test';"
   },
   "repository": {
     "type": "git",
