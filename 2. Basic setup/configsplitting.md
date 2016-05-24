@@ -1,5 +1,8 @@
-#Basic setup
-Defining the least supported setup
+#Config Splitting
+More complex scenario's require different setups:
+- Development environments needs debugging info 
+- Test environments run tests afterwards
+- Production environments uglify and minify JavaScript
 
 ---
 #prerequisites
@@ -34,7 +37,7 @@ npm install webpack --save
 Create the inital setup and test it
 
 ---
-### Using external configuration
+###Using external configuration
 Webpack can be configured to start with a setup javascript file
 - add a webpack.config.js (name is required)
 - start webpack 
@@ -43,7 +46,7 @@ The config file is not JSON but a JavaScript file so it can
 contain executable script. Lets look at an example:
 
 ---
-### sample webpack.config.js
+###sample webpack.config.js
 ```javascript
 module.exports = {
     entry: "./entry.js",
@@ -58,5 +61,4 @@ module.exports = {
     }
 };
 ```
-
 

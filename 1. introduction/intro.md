@@ -5,10 +5,13 @@
 ###Agenda
 - What is Webpack
 - Basic setup
-- Splitting up the config
-- Testing setup
 - Loaders
 - Plugins
+- Code Splitting
+- Stylesheets
+- Libraries and externals
+- Dev tools
+- Hot loading
 - Using webpack with Angular2
  
  ---
