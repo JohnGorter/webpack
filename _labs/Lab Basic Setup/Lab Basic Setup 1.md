@@ -1,9 +1,8 @@
-## Lab Basic Setup
+## Lab 1. Basic Setup
 In this lab you will install all required prerequisites and
 test the setup of webpack.
 > duration: 30 minutes
 
----
 ### Step 1. Install the requirements
 Create a directory named 'webpack_labs' and navigate into it.
 Install NodeJS from it's website and install Wekpack using
@@ -14,8 +13,7 @@ create a file 'test.js' inside your current folder and write the following code
 ```javascript
 console.log('test');
 ```
-Save the file.
-Run the command to build the bundle.js. Use your favorite text editor to inspect 
+Save the file and run the command to build the bundle.js. Use your favorite text editor to inspect 
 the generated file. Notice how the bundled file is wrapped into a module so when 
 included into a page for example, the generated bundle does not pollute the global 
 namespace.
@@ -25,12 +23,6 @@ Run the file using the following command:
 $ node ./bundle.js
 ```
 If all went well, the output should display 'test'
-
----
-
-test on a new page
-
----
 
 ### Step 2. Link another file into test.js
 Add another file, named test2.js and fill it with the following content:
