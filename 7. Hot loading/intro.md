@@ -43,6 +43,16 @@ user interaction in this process (you decide).
 ---
 ### From the compiler (webpack) view
 
+Compiler needs to emit the "Update", which contains:
+
+- the update manifest (json)
+    - contains the new compilation hash and a list of all update 
+chunks
+- one or multiple update chunks (js)
+    - contains code for all updated modules in this chunk 
+(or a flag if a module was removed).
+
+^^^
 In addition to the normal assets, the compiler needs to emit the "Update" 
 to allow updating the previous version to the current version. 
 
@@ -55,11 +65,6 @@ chunks (2.).
 
 The update chunks contains code for all updated modules in this chunk 
 (or a flag if a module was removed).
-
-&&&
-hello world of notes
-
-test note 
 
 The compiler also makes sure that module and chunk ids are consistent 
 between these builds. It uses a "records" json file to store them between 
