@@ -1,6 +1,6 @@
 var spawn = require('child_process').spawn;
 const add = spawn('git', ['add','.']);
-const commit = spawn('git', ['commit','-am\'test\'']);
+const commit = spawn('git', ['commit','-am\'testing\'']);
 const push = spawn('git', ['push','.']);
  
 
