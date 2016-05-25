@@ -7,9 +7,11 @@ console.log('adding files.....');
 var result = spawn('git', ['add','.'], options);
 console.log(result.output);
 console.log('commiting files...');
-spawn('git', ['commit','-am\'testing\''], options);
+result =  spawn('git', ['commit','-am\'testing\''], options);
+console.log(result.output);
 console.log('pushing repository to github...');
-spawn('git', ['push','.'], options);
+result =  spawn('git', ['push','.'], options);
+console.log(result.output);
 console.log('Done.');
 
  
