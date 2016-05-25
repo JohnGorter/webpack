@@ -12,9 +12,12 @@ startAndWait(add)
 function startAndWait(process) {
     return new Promise((resolve, reject) =>{
         console.log('starting process...')
-        process.stdin.on('data', (data) => {
-            console.log(`${data}`); 
-        });
+       process.stdin.on('readable', () => {
+            var chunk = process.stdin.read();
+            if (chunk !== null) {
+                 process.stdout.write(`data: ${chunk}`);
+            }
+          });
 
         process.stderr.on('data', (data) => {
             console.log(`${data}`);
