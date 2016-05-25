@@ -44,4 +44,4 @@ error to fix.
 
 ---
 ### Labtime
-Test a configuration with webpack-validator, you're up
+Test a configuration with webpack-validator, you're up next bro
