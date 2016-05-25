@@ -13,11 +13,12 @@ result =  spawn('git', ['commit','-am\'testingabc\''], options);
 console.log(result.output[1].toString());
 console.log(result.output[2].toString());
 
-console.log('updating slides branch...');
-result =  spawn('git', ['subtree', '--prefix', '_slides', 'push', 'origin', 'gh-pages'], options);
+console.log('pushing repository to github...');
+result =  spawn('git', ['push'], options);
 console.log(result.output[1].toString()); 
 console.log(result.output[2].toString()); 
-console.log('Done.');
+
+
 
  
   

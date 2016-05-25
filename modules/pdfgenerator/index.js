@@ -9,7 +9,8 @@ module.exports = (config) =>
       (err, files) => { 
          
           try { 
-          var targets = files.filter(file => file.indexOf(".md") > 0).map(
+          var targets = files.filter(file => file.indexOf(".md") > 0 && file.indexOf("node_modules") < 0).map(
+              // exclude all the node_module stuff
               (file) => "./" + file
           );
           var i = 0; 
