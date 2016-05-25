@@ -11,7 +11,7 @@ result =  spawn('git', ['commit','-am\'testing\''], options);
 console.log(result.output[1].toString());
 console.log('pushing repository to github...');
 result =  spawn('git', ['push'], options);
-console.log(result.output[1].toString());
+console.log(result.output[1].toString()); 
 console.log('Done.');
 
  
