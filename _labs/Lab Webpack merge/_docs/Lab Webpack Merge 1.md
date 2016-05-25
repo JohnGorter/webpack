@@ -17,7 +17,7 @@ not already exists.
 ```javascript
 console.log('test');
 ```
-Save the results.
+Save the results.   
 
 ### Step 1. Use a single file merge
 Navigate into the earlier created directory 'webpack_labs' and create or open the file 'webpack.config.js' 
