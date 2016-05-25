@@ -4,7 +4,7 @@ const commit = spawn('git', ['commit','-am\'test\'']);
 // const add = spawn('git', ['add','.']);
  
 console.log('starting add.')
-startAndWait(add).then(startAndWait(commit));
+startAndWait(add).then(() => {startAndWait(commit)});
 
 function startAndWait(process) {
     return new Promise((resolve, reject) =>{
