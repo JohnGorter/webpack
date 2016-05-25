@@ -1,8 +1,12 @@
 var spawn = require('child_process').spawnSync;
 
+console.log('adding files.....');
 spawn('git', ['add','.']);
+console.log('commiting files...');
 spawn('git', ['commit','-am\'testing\'']);
+console.log('pushing repository to github...');
 spawn('git', ['push','.']);
+console.log('Done.');
 
  
 
