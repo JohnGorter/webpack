@@ -17,7 +17,7 @@ console.log('Done.');
 // .then(() => {return startAndWait('git', ['commit','-am\'testing\'']);})  
 // .then(() => {return startAndWait('git', ['push','.'])});
 
-
+   
 function startAndWait(process, args) {
     return new Promise((resolve, reject) =>{
          console.log('starting process...');
