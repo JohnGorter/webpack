@@ -1,8 +1,6 @@
 var spawn = require('child_process').spawnSync;
 var options = {
-    stdout:'inherit',
-    strerr:'inherit',
-    stdin:'inherit',
+    silent:true
 }
 
 console.log('adding files.....');
