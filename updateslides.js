@@ -1,11 +1,16 @@
 var spawn = require('child_process').spawnSync;
+var options = {
+    stdout:'inherit',
+    strerr:'inherit',
+    stdin:'inherit',
+}
 
 console.log('adding files.....');
-spawn('git', ['add','.']);
+spawn('git', ['add','.'], options);
 console.log('commiting files...');
-spawn('git', ['commit','-am\'testing\'']);
+spawn('git', ['commit','-am\'testing\''], options);
 console.log('pushing repository to github...');
-spawn('git', ['push','.']);
+spawn('git', ['push','.'], options);
 console.log('Done.');
 
  
