@@ -12,7 +12,7 @@ startAndWait(add)
 function startAndWait(process) {
     return new Promise((resolve, reject) =>{
         console.log('starting process...')
-        process.stdout.on('data', (data) => {
+        process.stdin.on('data', (data) => {
             console.log(`${data}`); 
         });
 
