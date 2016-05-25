@@ -5,9 +5,9 @@ const push = spawn('git', ['push','.']);
  
 
 startAndWait(add)
-.then(() => {startAndWait(commit)
-    .then(() => {startAndWait(push)})
-});
+.then(() => {return startAndWait(commit);})
+.then(() => {return startAndWait(push)});
+
 
 function startAndWait(process) {
     return new Promise((resolve, reject) =>{
