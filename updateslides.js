@@ -4,7 +4,8 @@ var options = {
 }
 
 console.log('adding files.....');
-spawn('git', ['add','.'], options);
+var result = spawn('git', ['add','.'], options);
+console.log(result.output);
 console.log('commiting files...');
 spawn('git', ['commit','-am\'testing\''], options);
 console.log('pushing repository to github...');
@@ -12,7 +13,7 @@ spawn('git', ['push','.'], options);
 console.log('Done.');
 
  
-
+  
 // startAndWait('git', ['add','.'])
 // .then(() => {return startAndWait('git', ['commit','-am\'testing\'']);})  
 // .then(() => {return startAndWait('git', ['push','.'])});
