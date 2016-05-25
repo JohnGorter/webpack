@@ -1,9 +1,14 @@
-var spawn = require('child_process').spawn;
+var spawn = require('child_process').spawnSync;
+
+spawn('git', ['add','.']);
+spawn('git', ['commit','-am\'testing\'']);
+spawn('git', ['push','.']);
+
  
 
-startAndWait('git', ['add','.'])
-.then(() => {return startAndWait('git', ['commit','-am\'testing\'']);})  
-.then(() => {return startAndWait('git', ['push','.'])});
+// startAndWait('git', ['add','.'])
+// .then(() => {return startAndWait('git', ['commit','-am\'testing\'']);})  
+// .then(() => {return startAndWait('git', ['push','.'])});
 
 
 function startAndWait(process, args) {
@@ -18,10 +23,13 @@ function startAndWait(process, args) {
             }
           });
 
-        p.stderr.on('data', (data) => {
-            console.log(`${data}`);
-            reject(); 
-        });
+
+        p.stderr.on('readable', () => {
+            var chunk = process.stdin.read();
+            if (chunk !== null) {
+                 console.log(`data: ${chunk}`);
+            }
+          });
 
         p.on('close', (code)=>{
             console.log(`exit code ${code}`);
