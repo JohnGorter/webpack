@@ -5,11 +5,17 @@ test the setup of webpack.
 
 ### Step 1. Install the requirements
 Create a directory named 'webpack_labs' and navigate into it.
-Install NodeJS from it's website and install Wekpack using
+Install NodeJS from it's website and install Webpack using
 ```
-$ npm install webpack
+$ sudo npm install webpack -g
 ```
-create a file 'test.js' inside your current folder and write the following code
+Create a package.json by using 
+```javascript
+npm init
+```
+Give appropriate values for the questions asked.
+
+Create a file 'test.js' inside your current folder and write the following code
 ```javascript
 console.log('test');
 ```

@@ -62,6 +62,7 @@ const common = {
   plugins: [ ... ]
 };
 // Detect how npm is run and branch based on that
+// u can use npm run 'script' to set this value
 switch(process.env.npm_lifecycle_event) {
   case 'build':
     module.exports = merge(common, { /*specifics*/});

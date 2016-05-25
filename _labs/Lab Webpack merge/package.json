@@ -1,0 +1,11 @@
+{
+  "name": "lab_webpack_merge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack-merge": "^0.13.0"
+  }
+}
