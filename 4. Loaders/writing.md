@@ -65,7 +65,7 @@ module.exports = function(content) {
 
 - Every loader is allowed to deliver its result as String or as Buffer
 
-- The compiler converts them between loaders.
+- The compiler converts them between loaders
 
 ```
 module.exports = function(content) {
