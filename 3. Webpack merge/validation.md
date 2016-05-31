@@ -1,5 +1,5 @@
-# Validate webpack configuration
-using webpack-validator
+## Validate webpack
+Using webpack-validator
 
 ---
 ### What is webpack-validator
@@ -32,11 +32,6 @@ const validate = require('webpack-validator');
 module.exports = validate(config);
 ```
 ---
-### Test it 
-If you break your Webpack configuration somehow after doing this, 
-the validator will likely notice and give you a nice validation 
-error to fix.
-
 ### Test it 
 If you break your Webpack configuration somehow after doing this, 
 the validator will likely notice and give you a nice validation 

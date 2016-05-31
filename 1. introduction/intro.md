@@ -1,5 +1,5 @@
 # Webpack 
- bundeling js files
+ Bundeling js files
  
 ---
 ### Agenda
