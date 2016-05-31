@@ -1,5 +1,5 @@
-# Webpack merge
-split and merge configurations
+## Webpack merge
+Split and merge configurations
 
 ---
 ### Config Splitting
@@ -30,9 +30,9 @@ var output = merge.smart(object1, object2, object3, ...);
 
 ---
 ### Smart Merging of Loaders
-Webpack-merge tries to be smart about merging loaders when merge.smart 
-is used. Loaders with matching tests will be merged into a single 
-loader value.
+Webpack-merge tries to be smart about merging loaders when merge smart is used.
+
+Loaders with matching tests will be merged into a single loader value.
 
 More info: https://www.npmjs.com/package/webpack-merge
 
@@ -45,8 +45,9 @@ Merging configurations in
 ---
 ### Single file merging
 Use switches to set different settings for different environments, 
-export the merge result of the common and specific configurations.
-Example:
+export the merge result of the common and specific configurations
+
+Example
 
 ---
 ### Single file merging example

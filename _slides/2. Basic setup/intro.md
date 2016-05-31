@@ -1,4 +1,4 @@
-# Basic setup
+## Basic setup
 Defining the least supported setup
 
 ---
@@ -27,7 +27,7 @@ npm install webpack --save
     chunk    {0} bundle.js (main) 28 bytes [rendered]
     [0] ./test.js 28 bytes {0} [built]
 ```
-- and of course there should be a generated bundle.js 
+- And of course there should be a generated bundle.js 
 
 ---
 ### Labtime
@@ -58,6 +58,18 @@ module.exports = {
         ]
     }
 };
+```
+
+---
+### Configuration options
+Some handy configuration options to remember
+
+```
+webpack          // for building once for development
+webpack -p       // for building once for production (minification)
+webpack --watch  // for continuous incremental build
+webpack -d       // for including source maps
+webpack --colors // for making things pretty
 ```
 
 ---
