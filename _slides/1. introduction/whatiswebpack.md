@@ -27,7 +27,12 @@ do a great job but webpack does some extra radness.
 
 --- 
 ### Why do we need Webpack
+Webpack enables professional and maintainable JavaScript programming
+> Webpack enables us to write JavaScript code into maintainable modules
+> while taking care of packaging and bundeling it for runtime use. 
 
+---
+### Why do we need Webpack
 Webpack supports:
 - module traversing and bundeling, you can organise code into modules
 - on demand loading, reducing the initial load time of application

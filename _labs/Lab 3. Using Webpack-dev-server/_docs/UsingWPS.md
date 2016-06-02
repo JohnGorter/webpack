@@ -10,6 +10,21 @@ Install NodeJS from it's website and install webpack-dev-server using
 $ sudo npm install webpack-dev-server -g
 $ sudo npm install webpack -g
 ```
+
+Run the webpack-dev-server and test to see if all went well.
+
+### Step 2. Change modules while running the server
+The webpack-dev-server watches for changes of the files and reloads them 
+when changed.
+
+
+Create or navigate to the directory named 'webpack_labs'.
+Install NodeJS from it's website and install webpack-dev-server using
+```
+$ sudo npm install webpack-dev-server -g
+$ sudo npm install webpack -g
+```
+
 Create a package.json by using 
 ```javascript
 npm init
