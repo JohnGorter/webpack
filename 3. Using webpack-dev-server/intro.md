@@ -23,3 +23,14 @@ the content is refreshed on file changes but there is no address bar present.
 
 ---
 ### How to use webpack-dev-server
+To start the webpack dev server use
+```
+webpack-dev-server
+```
+
+You have to have the npm module installed globally.
+
+---
+### Labtime
+Create the webpack-dev-server setup and test it
+
