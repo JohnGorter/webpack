@@ -14,7 +14,8 @@ Webpack-dev-server is a webpack integrated webserver, specificly designed for we
 
 Webpack-dev-server has two enpoints
 - http://localhost:8080/webpack-dev-server/
-    - shows an address bar and reacts upon file changes
+    - shows links to the bundles
+    - clicking on the link shows a page that reacts upon file changes
 - http://localhost:8080/
     - uses just the content of the application
     

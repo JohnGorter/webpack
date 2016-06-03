@@ -17,31 +17,46 @@ Run the webpack-dev-server and test to see if all went well.
 The webpack-dev-server watches for changes of the files and reloads them 
 when changed.
 
+Copy the starterfiles from the _starterfiles folder into the root of 
+the directory. 
 
-Create or navigate to the directory named 'webpack_labs'.
-Install NodeJS from it's website and install webpack-dev-server using
+Start webpack-dev-server and navigate to
+http://localhost:8080/webpack-dev-server
+
+Open the chrome devtools and inspect the output. Check that the console logs
+are written.
+
+Go back to your code editor and change the test.js message to 
 ```
-$ sudo npm install webpack-dev-server -g
-$ sudo npm install webpack -g
+var test2 = require('./test2.js')
+console.log("testing 1 2 3");
+console.log(test2);
 ```
 
-Create a package.json by using 
-```javascript
-npm init
-```
-Give appropriate values for the questions asked.
+Note that just the logmessage is changed here. Save your changes and inspect the 
+ouput. The content should not be automatically appear. 
 
-Create a file 'test.js' inside your current folder and write the following code
-```javascript
-console.log('test');
+Change the content back to the previous state:
 ```
-Save the file and run the command to build the bundle.js. Use your favorite text editor to inspect 
-the generated file. Notice how the bundled file is wrapped into a module so when 
-included into a page for example, the generated bundle does not pollute the global 
-namespace.
+var test2 = require('./test2.js')
+console.log("test");
+console.log(test2);
+```
 
-Run the file using the following command:
-```
-$ node ./bundle.js
-```
-If all went well, the output should display 'test'
+Now navigate to http://localhost:8080/webpack-dev-server and click the link to the magic html bundle.
+Not that there is a navigation bar in the top of the screen.
+
+Inspect the dev-tools from Chrome to see the log output. 
+
+Now change the message as we did earlier and go back to the browser. Note that the 
+messages now do appear, the javascripts are rebuilt and reloaded upon save.
+
+### Inline the sync
+Stop and restart the webpack-dev-server using the --inline command line switch. 
+Navigate to the root of the appication using:
+http://localhost:8080/
+
+Change the scripts to show another message and test to see if automatic reloading 
+and refreshing also works in the 'normal' page.
+
+-= End of lab =-
