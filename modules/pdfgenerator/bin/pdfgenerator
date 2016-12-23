@@ -2,5 +2,7 @@
 'use strict'
 
 var process = require('process');
-var config = process.argv.slice(2)[0] || '.';
-require('../index.js')(config);
+var configsource = process.argv.slice(2)[0] || '.';
+var configdest   = process.argv.slice(2)[1] || '.';
+console.log('command line is:', {source:configsource, dest: configdest});
+require('../index.js')({source:configsource, dest: configdest});

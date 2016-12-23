@@ -9,7 +9,7 @@
     "build": "webpack",
     "start": "lite-server -c bs-config.json",
     "presentation": "lite-server -c bs-config.json",
-    "generatelabs": "pdfgenerator ./_labs",
+    "generatelabs": "pdfgenerator ./_labs ./dist",
     "updateslides": "node updateslides.js",
     "push":"node push.js",
     "all":"npm run generatelabs && npm run push && npm run updateslides && npm run presentation"
